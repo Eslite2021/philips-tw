@@ -1,0 +1,2711 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ecobalance design">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="20250422">
+
+    <title>飛利浦客服保固</title>
+
+    <link rel="shortcut icon" href="images/favico.svg">
+    <link rel="bookmark" href="images/favico.svg">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/touch-icon.png">
+    <link rel="stylesheet" href="bootstrap_thisweb.css?v=20250422">
+    <link rel="stylesheet" href="thiswebstyle.css?v=20250422">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;900&display=swap" rel="stylesheet">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="wow.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.showmenu').on('click', function (event) {
+                event.preventDefault();
+                $('body').toggleClass('menu-show');
+            });
+
+            $('.hamburger').on('click', function () {
+                $(this).toggleClass('active');
+            });
+
+            $('.menu-overlay').on('click', function () {
+                $('body').removeClass('menu-show');
+                $('.hamburger').removeClass('active');
+            });
+
+        });
+    </script>
+
+    <style>
+        h2 {
+            color: #0074E0;
+        }
+
+        .warranty_btn {
+            width: 90%;
+            height: 48px;
+            background-color: #0074E0;
+            color: #FFF;
+            border-radius: 4px;
+            display: inline-block;
+            text-align: center;
+            line-height: 48px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin: 50px 20px 50px 20px;
+            opacity: 0.8;
+        }
+
+        .warranty_btn:hover {
+            opacity: 1;
+            color: #FFF;
+        }
+
+        .fakebreadcrumb {
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 13px;
+        }
+
+        .fakebreadcrumb a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        .fakebreadcrumb a:hover {
+            opacity: 0.8;
+        }
+
+        .page_tittle h2 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #000;
+            margin-left: 20px;
+            padding-bottom: 20px;
+        }
+
+        .page_tittle h4 {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #002B5C;
+            margin-left: 20px;
+        }
+
+        .page_tittle p {
+            font-size: 14px;
+            color: #DE7510;
+            max-width: 80vw;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .spot {
+            height: 73px;
+            background-color: #002B5C;
+            border-radius: 0px;
+            color: #FFF;
+            font-size: 24px;
+            opacity: 1;
+            text-align: center;
+            line-height: 70px;
+            margin: 50px 1.2vw 20px 20px;
+        }
+
+        .spot_list {
+            width: 90%;
+            list-style-type: none;
+            margin-left: 20px;
+        }
+
+        .spot_list h4 {
+            color: #0074E0;
+            font-size: clamp(20px, 2vw, 24px);
+            font-weight: 400;
+        }
+
+        .spot_list h5 {
+            color: #333;
+            font-size: 16px;
+        }
+
+        .spot_list h6 {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+
+        .spot_phone {
+            height: 12px;
+            width: auto;
+        }
+
+        .accordion-toggle {
+            width: 90%;
+            height: 51px;
+            /* margin: 50px 0px 50px 20px; */
+            display: block;
+            text-align: left;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #002B5C;
+            color: #FFF;
+            font-size: 20px;
+            line-height: 20px;
+            border: none;
+            padding: 1rem 1.2rem;
+            margin: 20px auto 0px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .accordion-toggle:hover {
+            background-color: #004080;
+        }
+
+        .arrow-icon {
+            margin-left: auto;
+            transition: transform 0.3s ease;
+            float: right;
+            line-height: 20px;
+        }
+
+
+        .accordion-toggle:not(.collapsed) .arrow-icon {
+            transform: rotate(180deg);
+            /* 展開時轉180度 */
+        }
+
+        .dashed-line {
+            border-top: 0.5px dashed #999;
+            margin: 32px 0px;
+        }
+
+        #warranty {
+            height: 200px;
+            margin-top: -180px;
+            visibility: hidden;
+        }
+
+        .warranty {
+            height: 190px;
+            border-radius: 8px;
+            border: #CCC solid 1px;
+            background-color: #FFF;
+            margin: 0 10px;
+        }
+
+        .warranty h4 {
+            color: #0074E0;
+            font-size: 22px;
+            font-weight: 400;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        .warranty h5 {
+            color: #002B5C;
+            font-size: 16px;
+            font-weight: 400;
+            padding-left: 20px;
+        }
+
+        .warranty a {
+            text-decoration: none;
+            color: #002B5C;
+            font-size: 16px;
+            font-weight: 400;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        .warranty a:hover {
+            color: #004080;
+        }
+
+        .warranty p {
+            color: #999;
+            font-size: 12px;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        .back-to-top {
+            display: block;
+            opacity: 0;
+            pointer-events: none;
+            /* 防止透明時點擊 */
+            transition: opacity 0.5s ease;
+            position: fixed;
+            bottom: 12vh;
+            right: 8vw;
+            z-index: 100;
+            background-color: #0074E0;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 50%;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .back-to-top:hover {
+            background-color: #005BB3;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                text-align: center;
+            }
+
+            #warranty {
+                height: 100px;
+                margin-top: -100px;
+            }
+
+            .warranty {
+                margin: 10px 0px;
+            }
+
+            .page_tittle {
+                margin-top: 5vh;
+            }
+
+            .page_tittle h2 {
+                margin-left: 0px;
+            }
+
+            .page_tittle h4 {
+                padding-right: 24px;
+                margin-left: 24px;
+                line-height: 1.5;
+            }
+
+            .back-to-top {
+                width: 50px;
+                height: 56px;
+                right: 0vw;
+                border-radius: 20px 0 0 20px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <header id="header" class="sticky-top">
+        <div class="container">
+            <a href="index.html">
+                <h2 class="page-title">飛利浦 銷售據點</h2>
+            </a>
+            <ul class="nav">
+                <li><a href="sever.html">百貨專櫃／客服保固</a></li>
+                <!-- <li><a href="https://www.ljtwm.com/授權銷售據點/街邊門店/" target="_blank">智能鎖經銷商</a></li> -->
+            </ul>
+            <a href="#" class="showmenu">
+                <div id="hamburger" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </a>
+        </div>
+
+    </header>
+
+
+
+    <main>
+        <div class="menu-overlay"></div>
+
+        <div class="container">
+
+
+            <div class="fakebreadcrumb">
+                <a href="index.html">首頁</a> > <span>百貨專櫃／客服保固</span>
+            </div>
+
+            <h5 class="d-none d-md-inline" style="display: inline; padding-left: 20px;">前往</h5><a
+                style="text-decoration: none;" href="sever.html#warranty" type="button"
+                class="col-11 col-md-3 warranty_btn">客服保固中心
+                ></a>
+
+
+            <!-- 百貨專櫃標題 -->
+            <div class="page_tittle">
+                <h2>百貨專櫃</h2>
+                <h4>電動牙刷／刮鬍刀／吹風機／其他飛利浦(淨水器、智能鎖、照明等)</h4>
+                <p>＊歡迎來電洽詢銷售品項，以利您出發前掌握最新資訊</p>
+            </div>
+
+            <!-- 電腦版百貨專櫃 -->
+            <div class="row no-gutters d-none d-md-flex">
+
+                <div class="col">
+                    <div class="spot">北部櫃點</div>
+                    <ul class="spot_list">
+                        <li>
+                            <h4>新光三越信義新天地A9館</h4>
+                        </li>
+                        <li>
+                            <h5>台北市信義區松壽路9號B2</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0227209366">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-27209366</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越信義新天地A8館</h4>
+                        </li>
+                        <li>
+                            <h5>台北市松高路12號7樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0227229877">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-27229877</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>SOGO復興館</h4>
+                        </li>
+                        <li>
+                            <h5>台北市忠孝東路三段300號8樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0287720327">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-87720327</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>SOGO忠孝館</h4>
+                        </li>
+                        <li>
+                            <h5>台北市忠孝東路四段45號8樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0277115558">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-77115558</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>台北微風廣場</h4>
+                        </li>
+                        <li>
+                            <h5>台北市復興南路一段39號2樓</h5>
+                            <h5>集雅社門市</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0266177688">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-66177688</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>統一時代百貨台北店</h4>
+                        </li>
+                        <li>
+                            <h5>台北市信義區忠孝東路五段8號6樓</h5>
+                        </li>
+                        <li>
+                            <h6><i class="fa-solid fa-phone-volume"></i> 02-27223058</h6>
+                        </li>
+
+                        <li>
+                            <h4>新光三越南西店</h4>
+                        </li>
+                        <li>
+                            <h5>台北市中山區南京西路12號7樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0225118158">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-25118158</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越天母店</h4>
+                        </li>
+                        <li>
+                            <h5>台北市士林區天母東路68號4樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0266130335">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-66130335</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>美麗華</h4>
+                        </li>
+                        <li>
+                            <h5>台北市中山區敬業三路20號3樓</h5>
+                        </li>
+                        <li>
+                            <h6><i class="fa-solid fa-phone-volume"></i> 02-85011180</h6>
+                        </li>
+
+                        <li>
+                            <h4>大葉高島屋</h4>
+                        </li>
+                        <li>
+                            <h5>台北市忠誠路二段55號5樓集雅社門市</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0266176088">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-66176088</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>SOGO天母店</h4>
+                        </li>
+                        <li>
+                            <h5>台北市中山北路6段77號6樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0277360299">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-77360299</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越 台北站前店</h4>
+                        </li>
+                        <li>
+                            <h5>台北市中正區忠孝西路一段66號10樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0223118238">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-23118238</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>板橋大遠百</h4>
+                        </li>
+                        <li>
+                            <h5>新北市板橋區新站路28號7樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0229620229">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-29620229</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>遠百板橋中山店</h4>
+                        </li>
+                        <li>
+                            <h5>新北市板橋區中山路一段152號10樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:022962022">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-2962022</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>比漾廣場</h4>
+                        </li>
+                        <li>
+                            <h5>新北市永和市中山路一段238號5樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0266370338">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-66370338</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>宏匯廣場</h4>
+                        </li>
+                        <li>
+                            <h5>新北市新莊區新北大道4段3號6樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0285214353">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-85214353</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>林口三井Outlet Park</h4>
+                        </li>
+                        <li>
+                            <h5>新北市林口區文化三路一段356號1樓</h5>
+                            <h5>(櫃號：11032)</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0277305631">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-77305631</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新店裕隆城</h4>
+                        </li>
+                        <li>
+                            <h5>新北市新店區中興路三段70號4樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0289146177">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 02-89146177</h6>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col">
+                    <div class="spot">桃竹櫃點</div>
+                    <ul class="spot_list">
+                        <li>
+                            <h4>新光三越桃園站前店</h4>
+                        </li>
+                        <li>
+                            <h5>桃園市桃園區中正路19號9樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:033393786">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 03-3393786</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>遠百桃園店</h4>
+                        </li>
+                        <li>
+                            <h5>桃園市桃園區中正路20號10F</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:033398363">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 03-3398363</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>SOGO中壢店</h4>
+                        </li>
+                        <li>
+                            <h5>桃園市中壢區元化路357號7樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:034226085">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 03-4226085</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新竹大遠百</h4>
+                        </li>
+                        <li>
+                            <h5>新竹市東區西大路323號5樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:035235786">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 03-5235786</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新竹巨城購物中心</h4>
+                        </li>
+                        <li>
+                            <h5>新竹市中央路239號6樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:036201158">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 03-6201158</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>台茂購物中心</h4>
+                        </li>
+                        <li>
+                            <h5>桃園市蘆竹區南崁路一段112號B2</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0902179810">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0902-179810</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>遠百竹北店</h4>
+                        </li>
+                        <li>
+                            <h5>新竹縣竹北市莊敬北路18號 5樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:036675445">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 03-6675445</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>大江購物中心</h4>
+                        </li>
+                        <li>
+                            <h5>桃園市中壢區中園路二段501號B1樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:034680051">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 03-4680051</h6>
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+                    <div class="spot">中部櫃點</div>
+                    <ul class="spot_list">
+                        <li>
+                            <h4>台中廣三SOGO</h4>
+                        </li>
+                        <li>
+                            <h5>台中市西區台灣大道二段459號10樓集雅社門市</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0436093118">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 04-36093118</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越中港店</h4>
+                        </li>
+                        <li>
+                            <h5>台中市西屯區台灣大道三段301號8樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0422543519">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 04-22543519</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>台中中友百貨</h4>
+                        </li>
+                        <li>
+                            <h5>台中市北區三民路三段161號B棟10樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0902306895">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0902-306895</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>台中大遠百</h4>
+                        </li>
+                        <li>
+                            <h5>台中市西區台灣大道三段251號A棟9樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0422545621">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 04-22545621</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>台中三井Outlet Park</h4>
+                        </li>
+                        <li>
+                            <h5>台中市梧棲區台灣大道10段168號1樓</h5>
+                            <h5>集雅社門市</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0436093808">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 04-36093808</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>台中三井LaLaport</h4>
+                        </li>
+                        <li>
+                            <h5>台中市東區進德路700號南館1樓</h5>
+                            <h5>集雅社門市</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0436095828">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 04-36095828</h6>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col">
+                    <div class="spot">南部櫃點</div>
+                    <ul class="spot_list">
+                        <li>
+                            <h4>遠百嘉義店</h4>
+                        </li>
+                        <li>
+                            <h5>嘉義市西區垂楊路537號B1</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:052834017">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 05-2834017</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越嘉義店</h4>
+                        </li>
+                        <li>
+                            <h5>嘉義市西區垂楊路726號10樓</h5>
+                            <h5>集雅社門市</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:053101606">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 05-3101606</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>耐斯廣場</h4>
+                        </li>
+                        <li>
+                            <h5>嘉義市東區忠孝路600號</h5>
+                            <h5>集雅社門市</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:052772367">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 05-2772367</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越台南中山店</h4>
+                        </li>
+                        <li>
+                            <h5>台南市中西區中山路162號9樓</h5>
+                            <h5>集雅社門市</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:066020138">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 06-6020138</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越台南西門新天地</h4>
+                        </li>
+                        <li>
+                            <h5>台南市中西區西門路一段658號B1</h5>
+                        <li>
+                            <a class="telto" href="tel:063030822">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 06-3030822</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>南紡購物中心</h4>
+                        </li>
+                        <li>
+                            <h5>台南市東區中華東路一段366號B1</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:063006507">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 06-3006507</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>漢神巨蛋</h4>
+                        </li>
+                        <li>
+                            <h5>高雄市左營區博愛二路777號B1</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0908297183">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0908-297183</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>漢神一館</h4>
+                        </li>
+                        <li>
+                            <h5>高雄市前金區成功一路266-1號6樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0908269162">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0908-269162</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越高雄左營店</h4>
+                        </li>
+                        <li>
+                            <h5>高雄市左營區高鐵路123號9樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:073505395">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 07-3505395</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>高雄夢時代購物中心</h4>
+                        </li>
+                        <li>
+                            <h5>高雄市中華五路789號3樓</h5>
+                            <h5>集雅社門市</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:079631088">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 07-9631088</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>統一時代百貨高雄店</h4>
+                        </li>
+                        <li>
+                            <h5>高雄市中華五路789號5樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0902306860">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0902-306860</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越高雄三多店</h4>
+                        </li>
+                        <li>
+                            <h5>高雄市前鎮區三多三路213號10樓</h5>
+                            <h5>集雅社門市</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:073327675">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 07-3327675</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>屏東太平洋百貨</h4>
+                        </li>
+                        <li>
+                            <h5>屏東市中正路72號6樓</h5>
+                            <h5>集雅社門市</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:088103778">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 08-8103778</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>高雄大遠百</h4>
+                        </li>
+                        <li>
+                            <h5>高雄市苓雅區三多四路21號10樓</h5>
+                            <h5>集雅社門市</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:075366881">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 07-5366881</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>台南三井Outlet Park</h4>
+                        </li>
+                        <li>
+                            <h5>台南市歸仁區歸仁大道101號2樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:066027268">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 06-6027268</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>高雄SKM Park outlet</h4>
+                        </li>
+                        <li>
+                            <h5>高雄市前鎮區中安路1-1號 (大道西2F)</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:077916368">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 07-7916368</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>SOGO高雄店</h4>
+                        </li>
+                        <li>
+                            <h5>高雄市三多三路217號6樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:079767967">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 07-9767967</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 平板版百貨專櫃 -->
+            <div class="row no-gutters d-flex d-md-none">
+                <!-- 北部櫃點 -->
+
+                <div class="card border-0 bg-transparent col-12">
+                    <button class="accordion-toggle collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseNorth" aria-expanded="false" aria-controls="collapseNorth">
+                        北部櫃點
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div id="collapseNorth" class="collapse" data-parent="#storeAccordion">
+                        <!-- 展開的內容 -->
+                        <div class="card-body">
+                            <ul class="spot_list">
+                                <li>
+                                    <h4>新光三越信義新天地A9館</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市信義區松壽路9號B2</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0227209366">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-27209366</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新光三越信義新天地A8館</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市松高路12號7樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0227229877">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-27229877</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>SOGO復興館</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市忠孝東路三段300號8樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0287720327">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-87720327</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>SOGO忠孝館</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市忠孝東路四段45號8樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0277115558">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-77115558</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>台北微風廣場</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市復興南路一段39號2樓</h5>
+                                    <h5>集雅社門市</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0266177688">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-66177688</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>統一時代百貨台北店</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市信義區忠孝東路五段8號6樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0227223058">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-27223058</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新光三越南西店</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市中山區南京西路12號7樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0225118158">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-25118158</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新光三越天母店</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市士林區天母東路68號4樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0266130335">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-66130335</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>美麗華</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市中山區敬業三路20號3樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0285011180">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-85011180</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>大葉高島屋</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市忠誠路二段55號5樓集雅社門市</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0266176088">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-66176088</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>SOGO天母店</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市中山北路6段77號6樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0277360299">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-77360299</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新光三越 台北站前店</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市中正區忠孝西路一段66號10樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0223118238">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-23118238</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>板橋大遠百</h4>
+                                </li>
+                                <li>
+                                    <h5>新北市板橋區新站路28號7樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0229620229">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-29620229</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>遠百板橋中山店</h4>
+                                </li>
+                                <li>
+                                    <h5>新北市板橋區中山路一段152號10樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:022962022">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-2962022</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>比漾廣場</h4>
+                                </li>
+                                <li>
+                                    <h5>新北市永和市中山路一段238號5樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0266370338">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-66370338</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>宏匯廣場</h4>
+                                </li>
+                                <li>
+                                    <h5>新北市新莊區新北大道4段3號6樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0285214353">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-85214353</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>林口三井Outlet Park</h4>
+                                </li>
+                                <li>
+                                    <h5>新北市林口區文化三路一段356號1樓</h5>
+                                    <h5>(櫃號：11032)</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0277305631">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-77305631</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新店裕隆城</h4>
+                                </li>
+                                <li>
+                                    <h5>新北市新店區中興路三段70號4樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0289146177">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 02-89146177</h6>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 桃竹櫃點 -->
+                <div class="card border-0 bg-transparent col-12">
+                    <button class="accordion-toggle collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseNorthCentral" aria-expanded="false" aria-controls="collapseNorthCentral">
+                        桃竹櫃點
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div id="collapseNorthCentral" class="collapse" data-parent="#storeAccordion">
+                        <!-- 展開的內容 -->
+                        <div class="card-body">
+                            <ul class="spot_list">
+                                <li>
+                                    <h4>新光三越桃園站前店</h4>
+                                </li>
+                                <li>
+                                    <h5>桃園市桃園區中正路19號9樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:033393786">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 03-3393786</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>遠百桃園店</h4>
+                                </li>
+                                <li>
+                                    <h5>桃園市桃園區中正路20號10F</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:033398363">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 03-3398363</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>SOGO中壢店</h4>
+                                </li>
+                                <li>
+                                    <h5>桃園市中壢區元化路357號7樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:034226085">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 03-4226085</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新竹大遠百</h4>
+                                </li>
+                                <li>
+                                    <h5>新竹市東區西大路323號5樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:035235786">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 03-5235786</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新竹巨城購物中心</h4>
+                                </li>
+                                <li>
+                                    <h5>新竹市中央路239號6樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:036201158">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 03-6201158</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>台茂購物中心</h4>
+                                </li>
+                                <li>
+                                    <h5>桃園市蘆竹區南崁路一段112號B2</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0902179810">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0902-179810</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>遠百竹北店</h4>
+                                </li>
+                                <li>
+                                    <h5>新竹縣竹北市莊敬北路18號 5樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:036675445">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 03-6675445</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>大江購物中心</h4>
+                                </li>
+                                <li>
+                                    <h5>桃園市中壢區中園路二段501號B1樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:034680051">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 03-4680051</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 中部櫃點 -->
+                <div class="card border-0 bg-transparent col-12">
+                    <button class="accordion-toggle collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseCentral" aria-expanded="false" aria-controls="collapseCentral">
+                        中部櫃點
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div id="collapseCentral" class="collapse" data-parent="#storeAccordion">
+                        <!-- 展開的內容 -->
+                        <div class="card-body">
+                            <ul class="spot_list">
+                                <li>
+                                    <h4>台中廣三SOGO</h4>
+                                </li>
+                                <li>
+                                    <h5>台中市西區台灣大道二段459號10樓集雅社門市</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0436093118">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 04-36093118</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新光三越中港店</h4>
+                                </li>
+                                <li>
+                                    <h5>台中市西屯區台灣大道三段301號8樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0422543519">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 04-22543519</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>台中中友百貨</h4>
+                                </li>
+                                <li>
+                                    <h5>台中市北區三民路三段161號B棟10樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0902306895">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0902-306895</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>台中大遠百</h4>
+                                </li>
+                                <li>
+                                    <h5>台中市西區台灣大道三段251號A棟9樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0422545621">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 04-22545621</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>台中三井Outlet Park</h4>
+                                </li>
+                                <li>
+                                    <h5>台中市梧棲區台灣大道10段168號1樓</h5>
+                                    <h5>集雅社門市</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0436093808">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 04-36093808</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>台中三井LaLaport</h4>
+                                </li>
+                                <li>
+                                    <h5>台中市東區進德路700號南館1樓</h5>
+                                    <h5>集雅社門市</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0436095828">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 04-36095828</h6>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 南部櫃點 -->
+                <div class="card border-0 bg-transparent col-12">
+                    <button class="accordion-toggle collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSouth" aria-expanded="false" aria-controls="collapseSouth">
+                        南部櫃點
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div id="collapseSouth" class="collapse" data-parent="#storeAccordion">
+                        <!-- 展開的內容 -->
+                        <div class="card-body">
+                            <ul class="spot_list">
+                                <li>
+                                    <h4>遠百嘉義店</h4>
+                                </li>
+                                <li>
+                                    <h5>嘉義市西區垂楊路537號B1</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:052834017">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 05-2834017</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新光三越嘉義店</h4>
+                                </li>
+                                <li>
+                                    <h5>嘉義市西區垂楊路726號10樓</h5>
+                                    <h5>集雅社門市</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:053101606">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 05-3101606</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>耐斯廣場</h4>
+                                </li>
+                                <li>
+                                    <h5>嘉義市東區忠孝路600號</h5>
+                                    <h5>集雅社門市</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:052772367">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 05-2772367</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新光三越台南中山店</h4>
+                                </li>
+                                <li>
+                                    <h5>台南市中西區中山路162號9樓</h5>
+                                    <h5>集雅社門市</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:066020138">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 06-6020138</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新光三越台南西門新天地</h4>
+                                </li>
+                                <li>
+                                    <h5>台南市中西區西門路一段658號B1</h5>
+                                <li>
+                                    <a class="telto" href="tel:063030822">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 06-3030822</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>南紡購物中心</h4>
+                                </li>
+                                <li>
+                                    <h5>台南市東區中華東路一段366號B1</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:063006507">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 06-3006507</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>漢神巨蛋</h4>
+                                </li>
+                                <li>
+                                    <h5>高雄市左營區博愛二路777號B1</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0908297183">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0908-297183</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>漢神一館</h4>
+                                </li>
+                                <li>
+                                    <h5>高雄市前金區成功一路266-1號6樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0908269162">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0908-269162</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新光三越高雄左營店</h4>
+                                </li>
+                                <li>
+                                    <h5>高雄市左營區高鐵路123號9樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:073505395">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 07-3505395</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>高雄夢時代購物中心</h4>
+                                </li>
+                                <li>
+                                    <h5>高雄市中華五路789號3樓</h5>
+                                    <h5>集雅社門市</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:079631088">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 07-9631088</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>統一時代百貨高雄店</h4>
+                                </li>
+                                <li>
+                                    <h5>高雄市中華五路789號5樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0902306860">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0902-306860</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新光三越高雄三多店</h4>
+                                </li>
+                                <li>
+                                    <h5>高雄市前鎮區三多三路213號10樓</h5>
+                                    <h5>集雅社門市</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:073327675">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 07-3327675</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>屏東太平洋百貨</h4>
+                                </li>
+                                <li>
+                                    <h5>屏東市中正路72號6樓</h5>
+                                    <h5>集雅社門市</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:088103778">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 08-8103778</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>高雄大遠百</h4>
+                                </li>
+                                <li>
+                                    <h5>高雄市苓雅區三多四路21號10樓</h5>
+                                    <h5>集雅社門市</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:075366881">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 07-5366881</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>台南三井Outlet Park</h4>
+                                </li>
+                                <li>
+                                    <h5>台南市歸仁區歸仁大道101號2樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:066027268">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 06-6027268</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>高雄SKM Park outlet</h4>
+                                </li>
+                                <li>
+                                    <h5>高雄市前鎮區中安路1-1號 (大道西2F)</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:077916368">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 07-7916368</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>SOGO高雄店</h4>
+                                </li>
+                                <li>
+                                    <h5>高雄市三多三路217號6樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:079767967">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 07-9767967</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="space"></div>
+
+
+
+            <!-- 行動電源／季節家電標題 -->
+            <div class="page_tittle">
+                <h4>行動電源／季節家電</h4>
+                <p>＊歡迎來電洽詢銷售品項，以利您出發前掌握最新資訊</p>
+            </div>
+
+            <!-- 電腦版行動電源／季節家電 -->
+            <div class="row no-gutters d-none d-md-flex">
+
+                <div class="col">
+                    <div class="spot">北部櫃點</div>
+                    <ul class="spot_list">
+                        <li>
+                            <h4>新光三越 台北站前店 </h4>
+                        </li>
+                        <li>
+                            <h5>台北市中正區忠孝西路一段66號10樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0910922373">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-922373</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越 天母店</h4>
+                        </li>
+                        <li>
+                            <h5>台北市士林區天母東路68號4樓(一館)</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0910922392">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-922392</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越 南西店</h4>
+                        </li>
+                        <li>
+                            <h5>台北市中山區南京西路12號7樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0910577872">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-577872</h6>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <h4>台北統一時代百貨</h4>
+                        </li>
+                        <li>
+                            <h5>台北市信義區忠孝束路五段8號6樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0910577820">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-577820</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>京站時尚廣場 台北店</h4>
+                        </li>
+                        <li>
+                            <h5>台北市大同區承德路一段1號3樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0910577809">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-577809</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>京站時尚廣場 小碧潭店</h4>
+                        </li>
+                        <li>
+                            <h5>新北市新店區中央路157號5樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0910922379">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-922379</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>台北信義威秀影城</h4>
+                        </li>
+                        <li>
+                            <h5>台北市信義區松壽路20號1樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0972777038">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0972-777038</h6>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <h4>大葉高島屋 台北天母</h4>
+                        </li>
+
+                        <li>
+                            <h5>台北市士林區忠誠路2段55號5樓</h5>
+                        </li>
+                        <li>
+                            <h6><i class="fa-solid fa-phone-volume"></i> 0910-922390</h6>
+                        </li>
+
+                        <li>
+                            <h4>遠東百貨 信義A13店</h4>
+                        </li>
+                        <li>
+                            <h5>台北市信義區松仁路58號8樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0910577872">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-577872</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>遠東百貨 板橋中山店</h4>
+                        </li>
+                        <li>
+                            <h5>新北市板橋區中山路一段152號10樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0972970209">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0972-970209</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>板橋 大遠百</h4>
+                        </li>
+                        <li>
+                            <h5>新北市板橋區新站路28 號B1</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0911109279">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0911-109279</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>遠東百貨 花蓮店</h4>
+                        </li>
+                        <li>
+                            <h5>花蓮縣花蓮市和平路581號3樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0921179008">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0921-179008</h6>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="spot">桃竹櫃點</div>
+                    <ul class="spot_list">
+                        <li>
+                            <h4>台茂購物中心</h4>
+                        </li>
+                        <li>
+                            <h5>桃園市蘆竹區南崁路一段112號5樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0910922378">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-922378</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光 桃園站前店</h4>
+                        </li>
+                        <li>
+                            <h5>桃園市桃園區中正路19號9樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0911109277">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0911-109277</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>大江購物中心</h4>
+                        </li>
+                        <li>
+                            <h5>桃園市中壢區中園路二段501號B1</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0928128737">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0928-128737</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>享平方 Shown Square</h4>
+                        </li>
+                        <li>
+                            <h5>新竹縣竹北市自強南路36號1樓</h5>
+                        </li>
+                        <li>
+                            <h6><i class="fa-solid fa-phone-volume"></i> 0910-922373</h6>
+                        </li>
+
+                        <li>
+                            <h4>遠東百貨 新竹店</h4>
+                        </li>
+                        <li>
+                            <h5>新竹市東區西大路323號5樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0972970206">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0972-970206</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>遠東百貨 竹北店</h4>
+                        </li>
+                        <li>
+                            <h5>新竹縣竹北市莊敬北路18號5樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0972970207">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0972-970207</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新竹 巨城MALL</h4>
+                        </li>
+                        <li>
+                            <h5>新竹市東區中央路229號B1</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0921179575">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0921-179575</h6>
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="spot">中部櫃點</div>
+                    <ul class="spot_list">
+                        <li>
+                            <h4>台中 廣三SOGO</h4>
+                        </li>
+                        <li>
+                            <h5>臺中市西區臺灣大道二段459號10樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0911637833">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0911-637833</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>台中 麗寶OUTLET</h4>
+                        </li>
+                        <li>
+                            <h5>臺中市后里區福容路201號二期 2樓</h5>
+                            <h5>櫃號：2009</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0911572395">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0911-572395</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>台中 中友百貨</h4>
+                        </li>
+                        <li>
+                            <h5>臺中市北區三民路三段161號10樓B棟</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0921179378">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0921-179378</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>台中 大遠百</h4>
+                        </li>
+                        <li>
+                            <h5>臺中市西屯區台灣大道三段251號9樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0911109278">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0911-109278</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>台中 新時代</h4>
+                        </li>
+                        <li>
+                            <h5>台中市東區復興路四段186號B2</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0910577820">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-577820</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>三井OUTLET 台中港</h4>
+                        </li>
+                        <li>
+                            <h5>台中市梧棲區臺灣大道十段168號1樓</h5>
+                            <h5>櫃號：53100</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0911572327">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0911-572327</h6>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col">
+                    <div class="spot">南部櫃點</div>
+                    <ul class="spot_list">
+
+                        <li>
+                            <h4>新光三越 嘉義垂楊店</h4>
+                        </li>
+                        <li>
+                            <h5>嘉義市西區垂楊路726號7樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0911109279">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0911-109279</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越 台南西門店</h4>
+                        </li>
+                        <li>
+                            <h5>台南市中西區西門路一段658號B1</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0910577862">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-577862</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越 台南中山店</h4>
+                        </li>
+                        <li>
+                            <h5>台南市中西區中山路162號9樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0921179338">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0921-179338</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越 小西門店</h4>
+                        </li>
+                        <li>
+                            <h5>台南市中西區西門路一段658號-1號B1</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0972777087">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0972-777087</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>南紡購物中心</h4>
+                        </li>
+                        <li>
+                            <h5>台南市東區中華東路一段366號4樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0921179787">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0921-179787</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>遠東百貨 台南成功店</h4>
+                        </li>
+                        <li>
+                            <h5>台南市東區前鋒路210號6樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0910922391">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-922391</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>義享時尚廣場</h4>
+                        </li>
+                        <li>
+                            <h5>高雄市鼓山區大順一路115號B1</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0911637832">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0911-637832</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>新光三越 高雄左營店</h4>
+                        </li>
+                        <li>
+                            <h5>高雄市左營區高鐵路123號9樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0910577837">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-577837</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>統一時代百貨高雄店</h4>
+                        </li>
+                        <li>
+                            <h5>高雄市前鎮區中華5路789號百貨4樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0921179069">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0921-179069</h6>
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>屏東太平洋百貨</h4>
+                        </li>
+                        <li>
+                            <h5>屏東縣屏東市中正路72號6樓</h5>
+                        </li>
+                        <li>
+                            <a class="telto" href="tel:0911637831">
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0911-637831</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- 平板版行動電源／季節家電 -->
+            <div class="row no-gutters d-flex d-md-none">
+                <!-- 北部櫃點 -->
+                <div class="card border-0 bg-transparent col-12">
+                    <button class="accordion-toggle collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapse_North" aria-expanded="false" aria-controls="collapse_North">
+                        北部櫃點
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div id="collapse_North" class="collapse" data-parent="#storeAccordion">
+                        <!-- 展開的內容 -->
+                        <div class="card-body">
+                            <ul class="spot_list">
+                                <li>
+                                    <h4>新光三越 台北站前店 </h4>
+                                </li>
+                                <li>
+                                    <h5>台北市中正區忠孝西路一段66號10樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0910922373">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0910-922373</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新光三越 天母店</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市士林區天母東路68號4樓(一館)</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0910922392">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0910-922392</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>新光三越 南西店</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市中山區南京西路12號7樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0910577872">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0910-577872</h6>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <h4>台北統一時代百貨</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市信義區忠孝束路五段8號6樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0910577820">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0910-577820</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>京站時尚廣場 台北店</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市大同區承德路一段1號3樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0910577809">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0910-577809</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>京站時尚廣場 小碧潭店</h4>
+                                </li>
+                                <li>
+                                    <h5>新北市新店區中央路157號5樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0910922379">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0910-922379</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>台北信義威秀影城</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市信義區松壽路20號1樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0972777038">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0972-777038</h6>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <h4>大葉高島屋 台北天母</h4>
+                                </li>
+
+                                <li>
+                                    <h5>台北市士林區忠誠路2段55號5樓</h5>
+                                </li>
+                                <li>
+                                    <h6><i class="fa-solid fa-phone-volume"></i> 0910-922390</h6>
+                                </li>
+
+                                <li>
+                                    <h4>遠東百貨 信義A13店</h4>
+                                </li>
+                                <li>
+                                    <h5>台北市信義區松仁路58號8樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0910577872">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0910-577872</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>遠東百貨 板橋中山店</h4>
+                                </li>
+                                <li>
+                                    <h5>新北市板橋區中山路一段152號10樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0972970209">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0972-970209</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>板橋 大遠百</h4>
+                                </li>
+                                <li>
+                                    <h5>新北市板橋區新站路28 號B1</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0911109279">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0911-109279</h6>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <h4>遠東百貨 花蓮店</h4>
+                                </li>
+                                <li>
+                                    <h5>花蓮縣花蓮市和平路581號3樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0921179008">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0921-179008</h6>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 桃竹櫃點 -->
+                <div class="card border-0 bg-transparent col-12">
+                    <button class="accordion-toggle collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapse_NorthCentral" aria-expanded="false"
+                        aria-controls="collapse_NorthCentral">
+                        桃竹櫃點
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div id="collapse_NorthCentral" class="collapse" data-parent="#storeAccordion">
+                        <!-- 展開的內容 -->
+                        <ul class="spot_list">
+                            <li>
+                                <h4>台茂購物中心</h4>
+                            </li>
+                            <li>
+                                <h5>桃園市蘆竹區南崁路一段112號5樓</h5>
+                            </li>
+                            <li>
+                                <a class="telto" href="tel:0910922378"><h6><i class="fa-solid fa-phone-volume"></i> 0910-922378</h6></a>
+                            </li>
+    
+                            <li>
+                                <h4>新光 桃園站前店</h4>
+                            </li>
+                            <li>
+                                <h5>桃園市桃園區中正路19號9樓</h5>
+                            </li>
+                            <li>
+                                <a class="telto" href="tel:0911109277"><h6><i class="fa-solid fa-phone-volume"></i> 0911-109277</h6></a>
+                            </li>
+    
+                            <li>
+                                <h4>大江購物中心</h4>
+                            </li>
+                            <li>
+                                <h5>桃園市中壢區中園路二段501號B1</h5>
+                            </li>
+                            <li>
+                                <a class="telto" href="tel:0928128737"><h6><i class="fa-solid fa-phone-volume"></i> 0928-128737</h6></a>
+                            </li>
+    
+                            <li>
+                                <h4>享平方 Shown Square</h4>
+                            </li>
+                            <li>
+                                <h5>新竹縣竹北市自強南路36號1樓</h5>
+                            </li>
+                            <li>
+                                <h6><i class="fa-solid fa-phone-volume"></i> 0910-922373</h6>
+                            </li>
+    
+                            <li>
+                                <h4>遠東百貨 新竹店</h4>
+                            </li>
+                            <li>
+                                <h5>新竹市東區西大路323號5樓</h5>
+                            </li>
+                            <li>
+                                <a class="telto" href="tel:0972970206"><h6><i class="fa-solid fa-phone-volume"></i> 0972-970206</h6></a>
+                            </li>
+    
+                            <li>
+                                <h4>遠東百貨 竹北店</h4>
+                            </li>
+                            <li>
+                                <h5>新竹縣竹北市莊敬北路18號5樓</h5>
+                            </li>
+                            <li>
+                                <a class="telto" href="tel:0972970207"><h6><i class="fa-solid fa-phone-volume"></i> 0972-970207</h6></a>
+                            </li>
+    
+                            <li>
+                                <h4>新竹 巨城MALL</h4>
+                            </li>
+                            <li>
+                                <h5>新竹市東區中央路229號B1</h5>
+                            </li>
+                            <li>
+                                <a class="telto" href="tel:0921179575"><h6><i class="fa-solid fa-phone-volume"></i> 0921-179575</h6></a>
+                            </li>
+    
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- 中部櫃點 -->
+                <div class="card border-0 bg-transparent col-12">
+                    <button class="accordion-toggle collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapse_Central" aria-expanded="false" aria-controls="collapse_Central">
+                        中部櫃點
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div id="collapse_Central" class="collapse" data-parent="#storeAccordion">
+                        <!-- 展開的內容 -->
+                        <div class="card-body">
+                            <ul class="spot_list">
+                                <li>
+                                    <h4>台中 廣三SOGO</h4>
+                                </li>
+                                <li>
+                                    <h5>臺中市西區臺灣大道二段459號10樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0911637833">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0911-637833</h6>
+                                    </a>
+                                </li>
+        
+                                <li>
+                                    <h4>台中 麗寶OUTLET</h4>
+                                </li>
+                                <li>
+                                    <h5>臺中市后里區福容路201號二期 2樓</h5>
+                                    <h5>櫃號：2009</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0911572395">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0911-572395</h6>
+                                    </a>
+                                </li>
+        
+                                <li>
+                                    <h4>台中 中友百貨</h4>
+                                </li>
+                                <li>
+                                    <h5>臺中市北區三民路三段161號10樓B棟</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0921179378">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0921-179378</h6>
+                                    </a>
+                                </li>
+        
+                                <li>
+                                    <h4>台中 大遠百</h4>
+                                </li>
+                                <li>
+                                    <h5>臺中市西屯區台灣大道三段251號9樓</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0911109278">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0911-109278</h6>
+                                    </a>
+                                </li>
+        
+                                <li>
+                                    <h4>台中 新時代</h4>
+                                </li>
+                                <li>
+                                    <h5>台中市東區復興路四段186號B2</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0910577820">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0910-577820</h6>
+                                    </a>
+                                </li>
+        
+                                <li>
+                                    <h4>三井OUTLET 台中港</h4>
+                                </li>
+                                <li>
+                                    <h5>台中市梧棲區臺灣大道十段168號1樓</h5>
+                                    <h5>櫃號：53100</h5>
+                                </li>
+                                <li>
+                                    <a class="telto" href="tel:0911572327">
+                                        <h6><i class="fa-solid fa-phone-volume"></i> 0911-572327</h6>
+                                    </a>
+                                </li>
+        
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 南部櫃點 -->
+                <div class="accordion col-12" id="storeAccordion">
+                    <div class="card border-0 bg-transparent">
+                        <button class="accordion-toggle collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapse_South" aria-expanded="false" aria-controls="collapse_South">
+                            南部櫃點
+                            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                        </button>
+                        <div id="collapse_South" class="collapse" data-parent="#storeAccordion">
+                            <!-- 展開的內容 -->
+                            <div class="card-body">
+                                <ul class="spot_list">
+
+                                    <li>
+                                        <h4>新光三越 嘉義垂楊店</h4>
+                                    </li>
+                                    <li>
+                                        <h5>嘉義市西區垂楊路726號7樓</h5>
+                                    </li>
+                                    <li>
+                                        <a class="telto" href="tel:0911109279">
+                                            <h6><i class="fa-solid fa-phone-volume"></i> 0911-109279</h6>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <h4>新光三越 台南西門店</h4>
+                                    </li>
+                                    <li>
+                                        <h5>台南市中西區西門路一段658號B1</h5>
+                                    </li>
+                                    <li>
+                                        <a class="telto" href="tel:0910577862">
+                                            <h6><i class="fa-solid fa-phone-volume"></i> 0910-577862</h6>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <h4>新光三越 台南中山店</h4>
+                                    </li>
+                                    <li>
+                                        <h5>台南市中西區中山路162號9樓</h5>
+                                    </li>
+                                    <li>
+                                        <a class="telto" href="tel:0921179338">
+                                            <h6><i class="fa-solid fa-phone-volume"></i> 0921-179338</h6>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <h4>新光三越 小西門店</h4>
+                                    </li>
+                                    <li>
+                                        <h5>台南市中西區西門路一段658號-1號B1</h5>
+                                    </li>
+                                    <li>
+                                        <a class="telto" href="tel:0972777087">
+                                            <h6><i class="fa-solid fa-phone-volume"></i> 0972-777087</h6>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <h4>南紡購物中心</h4>
+                                    </li>
+                                    <li>
+                                        <h5>台南市東區中華東路一段366號4樓</h5>
+                                    </li>
+                                    <li>
+                                        <a class="telto" href="tel:0921179787">
+                                            <h6><i class="fa-solid fa-phone-volume"></i> 0921-179787</h6>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <h4>遠東百貨 台南成功店</h4>
+                                    </li>
+                                    <li>
+                                        <h5>台南市東區前鋒路210號6樓</h5>
+                                    </li>
+                                    <li>
+                                        <a class="telto" href="tel:0910922391">
+                                            <h6><i class="fa-solid fa-phone-volume"></i> 0910-922391</h6>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <h4>義享時尚廣場</h4>
+                                    </li>
+                                    <li>
+                                        <h5>高雄市鼓山區大順一路115號B1</h5>
+                                    </li>
+                                    <li>
+                                        <a class="telto" href="tel:0911637832">
+                                            <h6><i class="fa-solid fa-phone-volume"></i> 0911-637832</h6>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <h4>新光三越 高雄左營店</h4>
+                                    </li>
+                                    <li>
+                                        <h5>高雄市左營區高鐵路123號9樓</h5>
+                                    </li>
+                                    <li>
+                                        <a class="telto" href="tel:0910577837">
+                                            <h6><i class="fa-solid fa-phone-volume"></i> 0910-577837</h6>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <h4>統一時代百貨高雄店</h4>
+                                    </li>
+                                    <li>
+                                        <h5>高雄市前鎮區中華5路789號百貨4樓</h5>
+                                    </li>
+                                    <li>
+                                        <a class="telto" href="tel:0921179069">
+                                            <h6><i class="fa-solid fa-phone-volume"></i> 0921-179069</h6>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <h4>屏東太平洋百貨</h4>
+                                    </li>
+                                    <li>
+                                        <h5>屏東縣屏東市中正路72號6樓</h5>
+                                    </li>
+                                    <li>
+                                        <a class="telto" href="tel:0911637831">
+                                            <h6><i class="fa-solid fa-phone-volume"></i> 0911-637831</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="space"></div>
+
+            <hr class="dashed-line">
+
+            <div id="warranty"></div>
+            <div class="page_tittle">
+                <h2>客服保固中心</h2>
+            </div>
+
+            <!-- 客服保固內容 -->
+            <div class="row no-gutters px-3">
+                <div class="col-12 col-md warranty">
+                    <h4>台灣飛利浦股份有限公司</h4>
+                    <a class="telto" href="tel:0800558068">
+                        <h5>客服電話：0800-558068</h5>
+                    </a>
+                    <a href="https://www.store-philips.tw/Article/Detail/48599" target="_blank">維修服務：請點擊此處</a>
+                    <p>(男士保健類、口腔保健類、美髮沙龍類等商品)</p>
+                </div>
+                <div class="col-12 col-md warranty">
+                    <h4>飛利浦照明</h4>
+                    <a class="telto" href="tel:0800808268">
+                        <h5>客服電話：0800-808268</h5>
+                    </a>
+                    <a href="https://www.philips-lighting.com.tw/contact" target="_blank">維修服務：請點擊此處</a>
+                    <p>(LED電子設備、戶外燈具、照明燈器等商品)</p>
+                </div>
+                <div class="d-none d-md-block w-100"></div>
+                <div class="col-12 col-md warranty">
+                    <h4>飛利浦智能鎖</h4>
+                    <a class="telto" href="tel:0800777378">
+                        <h5>客服電話：0800-777378</h5>
+                    </a>
+                    <a href="https://www.ljtwm.com/%e5%94%ae%e5%be%8c%e6%9c%8d%e5%8b%99%e7%b6%ad%e4%bf%ae/"
+                        target="_blank">維修服務：請點擊此處</a>
+                    <p>(推拉式智能門鎖、智能晾衣架、保險櫃)</p>
+                </div>
+                <div class="col-12 col-md warranty">
+                    <h4>飛利浦汽車照明與移動</h4>
+                    <a class="telto" href="tel:0800700168">
+                        <h5>客服電話：0800-700168</h5>
+                    </a>
+                    <a href="https://www.philips-auto.com.tw/contact" target="_blank">維修服務：請點擊此處</a>
+                    <p>(汽車照明與配件、空氣淨化、智能移動生活等商品)</p>
+                </div>
+                <div class="d-none d-md-block w-100"></div>
+                <div class="col-12 col-md warranty">
+                    <h4>雙全國際股份有限公司</h4>
+                    <a class="telto" href="tel:0800058008">
+                        <h5>客服電話：0800-058008 分機0</h5>
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsFQSaXxVCbN_pkUFdcqb2AcMYbSIeUisSB1SL9A0lMcXtDQ/viewform"
+                        target="_blank">維修服務：請點擊此處</a>
+                    <p>(行動電源、季節家電、太陽能、3C配件等商品)</p>
+                </div>
+                <div class="d-none d-md-block col-md warranty" style="visibility: hidden;"></div>
+
+
+
+                <button id="backToTop" class="back-to-top" title="回到頂端">↑</button>
+                <script>
+                    const backToTopBtn = document.getElementById("backToTop");
+
+                    // 捲動時判斷是否顯示按鈕
+                    window.addEventListener("scroll", () => {
+                        if (window.scrollY > 400) {
+                            backToTopBtn.classList.add("visible");
+                        } else {
+                            backToTopBtn.classList.remove("visible");
+                        }
+                    });
+
+                    // 點擊按鈕時回到頂部
+                    backToTopBtn.addEventListener("click", () => {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth"
+                        });
+                    });
+                </script>
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+        <div class="space"></div>
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        <div id="footer" class="container-fluid">
+            <div class="row justify-content-center">
+                <!-- <p>Copyright © <a href="https://www.powerbank-phl.com.tw/">飛利浦 行動科技</a> All Rights Reserved. Designed by
+                    雙穎國際股份有限公司</p> -->
+                <p class="copyright">Copyright© 雙穎國際股份有限公司 All Rights Reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
